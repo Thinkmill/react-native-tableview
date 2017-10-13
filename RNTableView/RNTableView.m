@@ -10,7 +10,7 @@
 #import <React/RCTConvert.h>
 #import <React/RCTEventDispatcher.h>
 #import <React/RCTUtils.h>
-#import "UIView+React.h"
+#import <React/UIView+React.h>
 #import "JSONDataSource.h"
 #import "RNCellView.h"
 #import "RNTableFooterView.h"
