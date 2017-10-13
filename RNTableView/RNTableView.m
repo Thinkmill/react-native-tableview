@@ -173,8 +173,10 @@ RCT_NOT_IMPLEMENTED(-initWithCoder:(NSCoder *)aDecoder)
     // create selected indexes
     NSMutableArray *keys = [NSMutableArray arrayWithCapacity:[_sections count]];
 
-    for (NSDictionary *section in _sections){
-        [keys addObject:section[@"label"]];
+    if (self.sectionIndexTitlesEnabled) {
+        for (NSDictionary *section in _sections) {
+            [keys addObject:section[@"label"]];
+        }
     }
 
     return keys;
