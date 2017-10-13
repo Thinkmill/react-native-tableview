@@ -112,39 +112,41 @@ RCT_CUSTOM_VIEW_PROPERTY(showsVerticalScrollIndicator, BOOL, RNTableView) {
 
 - (NSDictionary *)constantsToExport {
     return @{
-             @"Style": @{
-                     @"Plain": @(UITableViewStylePlain),
-                     @"Grouped": @(UITableViewStyleGrouped)
-                     },
-             @"CellStyle": @{
-                     @"Default": @(UITableViewCellStyleDefault),
-                     @"Value1": @(UITableViewCellStyleValue1),
-                     @"Value2": @(UITableViewCellStyleValue2),
-                     @"Subtitle": @(UITableViewCellStyleSubtitle)
-                     },
-             @"CellEditingStyle": @{
-                     @"None": @(UITableViewCellEditingStyleNone),
-                     @"Delete": @(UITableViewCellEditingStyleDelete),
-                     @"Insert": @(UITableViewCellEditingStyleInsert)
-                     },
-             @"CellSelectionStyle": @{
-                     @"None": @(UITableViewCellSelectionStyleNone),
-                     @"Blue": @(UITableViewCellSelectionStyleBlue),
-                     @"Gray": @(UITableViewCellSelectionStyleGray),
-                     @"Default": @(UITableViewCellSelectionStyleDefault)
-                     },
-             @"SeparatorStyle": @{
-                     @"None": @(UITableViewCellSeparatorStyleNone),
-                     @"Line": @(UITableViewCellSeparatorStyleSingleLine),
-                     @"LineEtched": @(UITableViewCellSeparatorStyleSingleLineEtched)
-                     },
-             @"AccessoryType": @{
-                     @"None": @(UITableViewCellAccessoryNone),
-                     @"DisclosureIndicator": @(UITableViewCellAccessoryDisclosureIndicator),
-                     @"DisclosureButton": @(UITableViewCellAccessoryDetailDisclosureButton),
-                     @"Checkmark": @(UITableViewCellAccessoryCheckmark),
-                     @"DetailButton": @(UITableViewCellAccessoryDetailButton)
-                     }
+             @"Constants": @{
+                 @"Style": @{
+                         @"Plain": @(UITableViewStylePlain),
+                         @"Grouped": @(UITableViewStyleGrouped)
+                         },
+                 @"CellStyle": @{
+                         @"Default": @(UITableViewCellStyleDefault),
+                         @"Value1": @(UITableViewCellStyleValue1),
+                         @"Value2": @(UITableViewCellStyleValue2),
+                         @"Subtitle": @(UITableViewCellStyleSubtitle)
+                         },
+                 @"CellEditingStyle": @{
+                         @"None": @(UITableViewCellEditingStyleNone),
+                         @"Delete": @(UITableViewCellEditingStyleDelete),
+                         @"Insert": @(UITableViewCellEditingStyleInsert)
+                         },
+                 @"CellSelectionStyle": @{
+                         @"None": @(UITableViewCellSelectionStyleNone),
+                         @"Blue": @(UITableViewCellSelectionStyleBlue),
+                         @"Gray": @(UITableViewCellSelectionStyleGray),
+                         @"Default": @(UITableViewCellSelectionStyleDefault)
+                         },
+                 @"SeparatorStyle": @{
+                         @"None": @(UITableViewCellSeparatorStyleNone),
+                         @"Line": @(UITableViewCellSeparatorStyleSingleLine),
+                         @"LineEtched": @(UITableViewCellSeparatorStyleSingleLineEtched)
+                         },
+                 @"AccessoryType": @{
+                         @"None": @(UITableViewCellAccessoryNone),
+                         @"DisclosureIndicator": @(UITableViewCellAccessoryDisclosureIndicator),
+                         @"DisclosureButton": @(UITableViewCellAccessoryDetailDisclosureButton),
+                         @"Checkmark": @(UITableViewCellAccessoryCheckmark),
+                         @"DetailButton": @(UITableViewCellAccessoryDetailButton)
+                         }
+                 }
              };
 }
 
