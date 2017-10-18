@@ -36,7 +36,7 @@
 
 - (void)setEditing:(BOOL)editing {
     _editing = editing;
-    
+
     [self.tableView setEditing:editing animated:YES];
 }
 
@@ -543,7 +543,8 @@ RCT_NOT_IMPLEMENTED(-initWithCoder:(NSCoder *)aDecoder)
     if (self.moveWithinSectionOnly && sourceIndexPath.section != proposedDestinationIndexPath.section) {
         return sourceIndexPath;
     }
-    return proposedDestinationIndexPath;
+    NSDictionary *section = self.sections[proposedDestinationIndexPath.section];
+    return [section[@"canMove"] boolValue] ? proposedDestinationIndexPath : sourceIndexPath;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath { //implement the delegate method
