@@ -197,6 +197,7 @@ RCT_NOT_IMPLEMENTED(-initWithCoder:(NSCoder *)aDecoder)
     _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     _tableView.allowsMultipleSelectionDuringEditing = NO;
     _tableView.contentInset = self.contentInset;
+    _tableView.separatorInset = self.separatorInset;
     _tableView.contentOffset = self.contentOffset;
     _tableView.scrollIndicatorInsets = self.scrollIndicatorInsets;
     _tableView.showsHorizontalScrollIndicator = self.showsHorizontalScrollIndicator;

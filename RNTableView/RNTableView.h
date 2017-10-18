@@ -37,6 +37,7 @@
 @property (nonatomic) BOOL emptyInsets;
 @property (nonatomic) BOOL moveWithinSectionOnly;
 @property (nonatomic, assign) UIEdgeInsets contentInset;
+@property (nonatomic, assign) UIEdgeInsets separatorInset;
 @property (nonatomic, assign) CGPoint contentOffset;
 @property (nonatomic, assign) UIEdgeInsets scrollIndicatorInsets;
 @property (nonatomic, assign) BOOL showsHorizontalScrollIndicator;
