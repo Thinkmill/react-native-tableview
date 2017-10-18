@@ -149,6 +149,7 @@ The following style props are supported:
 - `tableViewCellEditingStyle`
 - `separatorStyle`
 - `contentInset`
+- `separatorInset`
 - `contentOffset`
 - `scrollIndicatorInsets`
 
