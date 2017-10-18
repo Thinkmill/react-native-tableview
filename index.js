@@ -134,7 +134,8 @@ class TableView extends React.Component {
                     footerHeight: section.props.footerHeight,
                     headerHeight: section.props.headerHeight,
                     items: items,
-                    count: count
+                    count: count,
+                    canMove: section.props.canMove,
                 });
             } else if (section && section.type==TableViewItem){
                 var el = extend({},section.props);
